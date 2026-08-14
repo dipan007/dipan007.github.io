@@ -572,13 +572,9 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
   .nav-cta .btn--primary span{ display:none; }
   .hero-actions .btn{ flex:1; justify-content:center; }
   .photo-card {
-    position: relative;
     top: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 300px;
+    margin-inline: auto;
   }
 }
 
