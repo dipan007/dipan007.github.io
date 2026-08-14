@@ -351,12 +351,12 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
   padding-right: 116px;
   }
 .scroll-arrows{
-  position: absolute;
-  top: 110px;
-  left: 0px;
-  display: flex;
-  gap: 10px;
-  padding-left: 1000px;
+  position:absolute;
+  top:110px;
+  right:0;
+  display:flex;
+  gap:10px;
+  padding-left:0;
 }
 .scroll-arrow{
   width: 42px;
