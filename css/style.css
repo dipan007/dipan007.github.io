@@ -355,11 +355,25 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
 .skill-name{ font-size:14px; font-weight:600; }
 
 /* ============================= PROJECTS =================================== */
-.projects-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.projects-grid{
+  display:flex;
+  gap:24px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  padding-bottom:14px;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+  scrollbar-color: var(--line) transparent;
+}
+.projects-grid::-webkit-scrollbar{ height:8px; }
+.projects-grid::-webkit-scrollbar-thumb{ background: var(--line); border-radius:999px; }
+.projects-grid::-webkit-scrollbar-track{ background:transparent; }
 .project-card{
   background:#fff; border:1px solid var(--line); border-radius: var(--radius);
   overflow:hidden; display:flex; flex-direction:column;
   transition: transform .2s ease, box-shadow .2s ease;
+  flex: 0 0 clamp(260px, 78vw, 330px);
+  scroll-snap-align: start;
 }
 .project-card:hover{ transform: translateY(-5px); box-shadow: var(--shadow-hover); }
 .project-thumb{ height:168px; overflow:hidden; background: var(--paper-alt); border-bottom:1px solid var(--line); }
@@ -520,7 +534,6 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
   .hero-visual{ max-width:360px; margin: 40px auto 0; }
   .kpi-float{ position:static; margin-top:20px; width:100%; }
   .about-grid, .certs-grid, .leadership-grid, .contact-grid{ grid-template-columns: 1fr; gap:36px; }
-  .projects-grid{ grid-template-columns: repeat(2,1fr); }
   .skills-grid{ grid-template-columns: repeat(3,1fr); }
   .stats-grid{ grid-template-columns: repeat(3,1fr); }
   .flow-grid{ grid-template-columns: repeat(3,1fr); row-gap:32px; }
@@ -542,7 +555,6 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
   .contact-cards{ grid-template-columns: 1fr; }
   .stats-grid{ grid-template-columns: repeat(2,1fr); }
   .skills-grid{ grid-template-columns: repeat(2,1fr); }
-  .projects-grid{ grid-template-columns: 1fr; }
   .flow-grid{ grid-template-columns: repeat(2,1fr); }
   .section{ padding: 64px 0; }
   .tools-strip{ justify-content:center; }

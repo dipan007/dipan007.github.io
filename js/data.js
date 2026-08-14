@@ -173,11 +173,10 @@ const SITE_DATA = {
      9. EDUCATION — shown as a vertical timeline, most recent first
   --------------------------------------------------------------------- */
   education: [
-    { degree: "M.S. in Statistics", place: "University of Barishal", date: "Apr 2024 – Sep 2025", detail: "CGPA 3.31 / 4.00 — Thesis defended" },
-    { degree: "Aspire Leaders Program", place: "Aspire Institute (Harvard Faculty-founded)", date: "Jul 2025 – Oct 2025", detail: "Leadership & professional development" },
-    { degree: "B.S. (Hons.) in Statistics", place: "University of Barishal", date: "Jan 2019 – Dec 2023", detail: "CGPA 3.16 / 4.00" },
-    { degree: "Higher Secondary Certificate, Science", place: "Narail Govt. Victoria College", date: "Jul 2016 – May 2018", detail: "GPA 4.75 / 5.00" },
-    { degree: "Secondary School Certificate, Science", place: "Maizpara Secondary School", date: "Mar 2011 – Apr 2016", detail: "GPA 5.00 / 5.00" },
+    { degree: "M.S. in Statistics", place: "University of Barishal", date: "2022 – 2023", detail: "CGPA 3.31 / 4.00 — Thesis defended 2025" },
+    { degree: "B.S. (Hons.) in Statistics", place: "University of Barishal", date: "2019 – 2022", detail: "CGPA 3.16 / 4.00" },
+    { degree: "Higher Secondary Certificate, Science", place: "Narail Govt. Victoria College", date: "May 2018", detail: "GPA 4.75 / 5.00" },
+    { degree: "Secondary School Certificate, Science", place: "Maizpara Secondary School", date: "2016", detail: "GPA 5.00 / 5.00" },
   ],
 
   /* ---------------------------------------------------------------------
