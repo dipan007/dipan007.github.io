@@ -351,12 +351,10 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
   padding-right: 116px;
   }
 .scroll-arrows{
-  position: absolute;
-  top: 110px;
-  left: 0px;
-  display: flex;
-  gap: 10px;
-  padding-left: 1000px;
+  position:absolute;
+  top:110px;
+  display:flex;
+  gap:10px;
 }
 .scroll-arrow{
   width: 55px;
@@ -548,6 +546,12 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
 .to-top svg{ width:18px; height:18px; }
 
 /* ============================= RESPONSIVE ================================== */
+@media (min-width: 1200px) {
+    .scroll-arrows{padding-left:1000px;}
+ }
+@media (min-width: 1199px) {
+    .scroll-arrows{padding-left:1000px;}
+ }
 @media (max-width: 980px){
   .hero-grid{ grid-template-columns: 1fr; }
   .hero-visual{ max-width:360px; margin: 40px auto 0; }
@@ -557,6 +561,12 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
   .stats-grid{ grid-template-columns: repeat(3,1fr); }
   .flow-grid{ grid-template-columns: repeat(3,1fr); row-gap:32px; }
   .flow-grid::before{ display:none; }
+  .photo-card {
+    top: 0;
+    right: 0;
+    margin-inline: auto;
+  }
+  .scroll-arrows{padding-left:700px;}
 }
 
 @media (max-width: 720px){
