@@ -571,7 +571,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
   .nav-toggle{ display:flex; }
   .nav-cta .btn--primary span{ display:none; }
   .hero-actions .btn{ flex:1; justify-content:center; }
-  .hero-visual{ grid-template-columns: 1fr; }
+  .hero-visual{ flex:1; justify-content:center; }
   .contact-cards{ grid-template-columns: 1fr; }
   .stats-grid{ grid-template-columns: repeat(2,1fr); }
   .skills-grid{ grid-template-columns: repeat(2,1fr); }
