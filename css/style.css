@@ -362,8 +362,46 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
   scroll-snap-type:x mandatory;
   padding-bottom:14px;
   -webkit-overflow-scrolling:touch;
-  scrollbar-width:thin;
+  scrollbar-width:none;
   scrollbar-color: var(--line) transparent;
+}
+.section-head--with-arrows{
+  position: relative;
+  padding-right: 116px;
+  }
+.scroll-arrows{
+  position: absolute;
+  top: 110px;
+  left: 0px;
+  display: flex;
+  gap: 10px;
+  padding-left: 1000px;
+}
+.scroll-arrow{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1.5px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal);
+  box-shadow: var(--shadow);
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.scroll-arrow svg{
+  width: 19px;
+  height: 19px;
+  display: block;
+}
+.scroll-arrow:hover{ background: var(--teal); color:#fff; border-color: var(--teal); }
+.scroll-arrow[disabled]{ opacity:.3; pointer-events:none; }
+
+@media (max-width:720px){
+  .section-head--with-arrows{ padding-right:0; }
+  .scroll-arrows{ position:static; margin-top:16px; }
+  .scroll-arrow{ display:none; }
 }
 .projects-grid::-webkit-scrollbar{ height:8px; }
 .projects-grid::-webkit-scrollbar-thumb{ background: var(--line); border-radius:999px; }

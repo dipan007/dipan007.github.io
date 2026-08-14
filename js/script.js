@@ -123,7 +123,7 @@
   const projectsWrap = document.getElementById('projectsGrid');
   if (projectsWrap) {
     projectsWrap.innerHTML = d.projects.map(p => `
-      <article class="project-card reveal">
+      <article class="project-card">
         <div class="project-thumb"><img src="${p.image}" alt="${p.title} dashboard screenshot" loading="lazy"></div>
         <div class="project-body">
           <span class="project-tag">${p.tag}</span>
@@ -296,5 +296,20 @@
     }, { passive: true });
     toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
-
+  /* -- Project arrow scroll buttons -- */
+const projectsTrack = document.getElementById('projectsGrid');
+const prevBtn = document.getElementById('projectsPrev');
+const nextBtn = document.getElementById('projectsNext');
+if (projectsTrack && prevBtn && nextBtn) {
+  const scrollAmount = () => projectsTrack.clientWidth * 0.85;
+  prevBtn.addEventListener('click', () => projectsTrack.scrollBy({ left: -scrollAmount(), behavior: 'smooth' }));
+  nextBtn.addEventListener('click', () => projectsTrack.scrollBy({ left: scrollAmount(), behavior: 'smooth' }));
+  const updateArrows = () => {
+    prevBtn.disabled = projectsTrack.scrollLeft < 10;
+    nextBtn.disabled = projectsTrack.scrollLeft > projectsTrack.scrollWidth - projectsTrack.clientWidth - 10;
+  };
+  projectsTrack.addEventListener('scroll', updateArrows, { passive: true });
+  window.addEventListener('resize', updateArrows);
+  updateArrows();
+}
 })();

@@ -127,11 +127,21 @@
   <!-- ============================= FEATURED PROJECTS ============================= -->
   <section class="section" id="projects" style="background:var(--paper-alt)">
     <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Portfolio</div>
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-sub">Real dashboards and workbooks, built end-to-end from raw data to business-ready reporting.</p>
-      </div>
+      <div class="section-head section-head--with-arrows">
+  <div>
+    <div class="eyebrow">Portfolio</div>
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-sub">Real dashboards and workbooks, built end-to-end from raw data to business-ready reporting.</p>
+  </div>
+  <div class="scroll-arrows">
+    <button class="scroll-arrow" id="projectsPrev" aria-label="Scroll projects left">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="scroll-arrow" id="projectsNext" aria-label="Scroll projects right">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
+</div>
       <div class="projects-grid" id="projectsGrid"><!-- injected --></div>
     </div>
   </section>
