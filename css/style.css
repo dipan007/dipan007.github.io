@@ -582,5 +582,20 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
   .flow-grid{ grid-template-columns: repeat(2,1fr); }
   .section{ padding: 64px 0; }
   .tools-strip{ justify-content:center; }
-  
+  .section-head--with-arrows{
+    padding-right:0;
+  }
+  .scroll-arrows{
+    position:static;
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+    padding-left:0;
+    margin-top:16px;
+  }
+  .scroll-arrow{
+    display:flex;
+    width:40px;
+    height:40px;
+  }
 }
