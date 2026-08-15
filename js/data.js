@@ -60,11 +60,11 @@ const SITE_DATA = {
      icon options: "folder", "dashboard", "tools", "team", "target"
   --------------------------------------------------------------------- */
   quickStats: [
-    { icon: "folder", value: 5, suffix: "+", label: "Analytics Projects Delivered" },
-    { icon: "dashboard", value: 3, suffix: "", label: "Power BI Dashboards Built" },
+    { icon: "folder", value: 5, suffix: "+", label: "Analytics Projects" },
+    { icon: "dashboard", value: 3, suffix: "", label: "Dashboards Built" },
     { icon: "tools", value: 8, suffix: "+", label: "Tools & Technologies" },
     { icon: "team", value: 35, suffix: "+", label: "Team Members Led" },
-    { icon: "target", value: 100, suffix: "%", label: "Dedicated to Data-Driven Impact" },
+    { icon: "target", value: 100, suffix: "%", label: "Data-Driven Impact" },
   ],
 
   /* ---------------------------------------------------------------------
