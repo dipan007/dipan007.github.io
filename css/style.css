@@ -131,7 +131,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
   border-bottom: 1px solid var(--line);
 }
 .nav .wrap{ display:flex; align-items:center; justify-content:space-between; width:100%; }
-.brand{ display:flex; align-items:center; gap:12px; }
+.brand{ display:flex; align-items:center; gap:10px; }
 .brand-mark{
   width:40px; height:40px; border-radius: 10px;
   background: var(--ink);
@@ -140,8 +140,9 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
   font-family: var(--f-mono); font-weight:600; font-size:14px;
   letter-spacing: -.02em;
 }
-.brand-text .name{ font-family: var(--f-display); font-weight:600; font-size:16.5px; letter-spacing:-.01em; }
-.brand-text .role{ font-family: var(--f-mono); font-size:11px; color: var(--ink-faint); letter-spacing:.04em; text-transform:uppercase; }
+.brand-text{ display:flex; flex-direction:column; gap:7px; }
+.brand-text .name{ font-family: var(--f-display); font-weight:600; font-size:16.5px; letter-spacing:-.01em; line-height:1.1; }
+.brand-text .role{ font-family: var(--f-mono); font-size:11px; color: var(--ink-faint); letter-spacing:.04em; text-transform:uppercase; line-height:1.1; }
 
 .nav-tabs{ display:flex; align-items:center; gap:4px; }
 .nav-tabs a{
@@ -545,11 +546,11 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
 .footer-bottom p{ font-size:13px; color: var(--panel-faint); }
 .footer-socials{ display:flex; gap:10px; }
 .footer-socials a{
-  width:60px; height:60px; border-radius:50%; border:1px solid var(--panel-line);
+  width:50px; height:50px; border-radius:50%; border:1px solid var(--panel-line);
   display:flex; align-items:center; justify-content:center; transition: border-color .15s ease, transform .15s ease;
 }
 .footer-socials a:hover{ border-color: var(--amber); transform: translateY(-2px); }
-.footer-socials svg{ width:40px; height:40px; }
+.footer-socials svg{ width:35px; height:35px; }
 
 /* Back to top */
 .to-top{

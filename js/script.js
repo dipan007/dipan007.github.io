@@ -34,6 +34,7 @@
     check: '<path d="M4 12.5l5 5L20 6.5"/>',
     email: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/>',
     phone: '<path d="M6.5 3.5c1 0 1.9.7 2.2 1.7l.7 2.2c.2.8 0 1.6-.6 2.1l-1.3 1.2a12.3 12.3 0 0 0 5.4 5.4l1.2-1.3c.5-.6 1.3-.8 2.1-.6l2.2.7a2.3 2.3 0 0 1 1.7 2.2v1.7c0 1.4-1.2 2.4-2.5 2.2C10 20 4 14 3.7 6.5c0-1.3 1.1-2.5 2.4-2.5Z"/>',
+    whatsapp: '<path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L3.5 20.5l4.3-1.1A8.5 8.5 0 1 0 12 3.5Z"/><path d="M8.7 8.6c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .5.4.2.5.6 1.6.7 1.7.1.1.1.3 0 .5-.1.2-.2.3-.3.4l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.6-.7c.2-.2.3-.2.5-.1l1.5.7c.2.1.3.2.4.3 0 .2 0 .9-.3 1.3-.3.5-1.3.9-1.8.9-.5 0-1.7-.2-3.5-1.5-2.2-1.5-3.5-3.5-3.6-3.7-.1-.1-.9-1.2-.9-2.3 0-1.1.6-1.6.8-1.9Z"/>',
     pin: '<path d="M12 21s-6.5-5.6-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.4"/>',
     linkedin: '<rect x="3.5" y="3.5" width="17" height="17" rx="2.5"/><path d="M8 10.5v6M8 7.8v.1M12 16.5v-3.6c0-1.2.9-2.1 2-2.1s2 .9 2 2.1v3.6"/>',
     github: '<path d="M12 3.5a8.5 8.5 0 0 0-2.7 16.6c.4.1.6-.2.6-.4v-1.5c-2.4.5-2.9-1.1-2.9-1.1-.4-1-1-1.3-1-1.3-.8-.6.1-.5.1-.5.9.1 1.4.9 1.4.9.8 1.4 2.2 1 2.7.8.1-.6.3-1 .6-1.3-1.9-.2-4-1-4-4.2 0-.9.3-1.7.9-2.3-.1-.2-.4-1.1.1-2.3 0 0 .7-.2 2.4.9a8 8 0 0 1 4.4 0c1.7-1.1 2.4-.9 2.4-.9.5 1.2.2 2.1.1 2.3.6.6.9 1.4.9 2.3 0 3.2-2 4-3.9 4.2.3.3.6.8.6 1.7v2.5c0 .2.2.5.6.4A8.5 8.5 0 0 0 12 3.5Z"/>',
@@ -87,7 +88,7 @@
       <a class="contact-card" href="mailto:${d.profile.email}">${svg('email')}<div><div class="k">Email</div><div class="v">${d.profile.email}</div></div></a>
       <a class="contact-card" href="tel:${d.profile.phone.replace(/\s+/g,'')}">${svg('phone')}<div><div class="k">Phone</div><div class="v">${d.profile.phone}</div></div></a>
       <div class="contact-card">${svg('pin')}<div><div class="k">Location</div><div class="v">${d.profile.location}</div></div></div>
-      <a class="contact-card" href="${d.profile.linkedin}" target="_blank" rel="noopener">${svg('linkedin')}<div><div class="k">LinkedIn</div><div class="v">/in/dipannandi</div></div></a>`;
+      <a class="contact-card" href="${d.profile.whatsapp}" target="_blank" rel="noopener">${svg('whatsapp')}<div><div class="k">WhatsApp</div><div class="v">Chat directly</div></div></a>`;
   }
 
   /* ----------------------------- TICKER ---------------------------------- */
