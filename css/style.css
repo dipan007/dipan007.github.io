@@ -629,5 +629,6 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
     width:40px;
     height:40px;
   }
-  .stat-card{ flex: 1 1 100%; }
+  .stat-card{ flex: 1 1 calc(50% - 14px); }
+  .stats-grid{ padding: 20px 18px; }
 }
